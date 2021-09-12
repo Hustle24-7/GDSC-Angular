@@ -1,0 +1,33 @@
+<mat-toolbar color="primary" class="NavigationBar">
+  <mat-toolbar-row>
+    <a class="navbar-brand" href="/" >
+      <img id="dsc_nav_logo" src="../assets/images/dsc_logo.png" alt="Logo" class="noselect">
+      <span class="NavTitle noselect" style="color: rgb(255, 255, 255); padding-left: 10px ;">DSC - AEC</span>
+    </a>
+    <span class="spacer"></span>
+    <!-- <button mat-icon-button class="" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+
+    <button mat-button [routerLink]="['']">Home</button>
+    <button mat-button [routerLink]="['/Team']">Team</button>
+    <!-- [routerLink]="['/Team'] -->
+    <mat-menu #Team_menu="matMenu">
+      <button mat-menu-item [routerLink]="['/Team']">Current</button>
+      <button mat-menu-item [matMenuTriggerFor]="archived" disabled>Archived <mat-icon>archive</mat-icon> </button>
+      <mat-menu #archived="matMenu">    
+      </mat-menu>
+    </mat-menu>
+    <button mat-button [routerLink]="['/Events']">Events</button>
+    <button mat-button onclick="location.href='/#Aditya'">College</button>
+    <button mat-button>Contact</button>
+    <!-- <button mat-icon-button ><mat-icon>light_mode</mat-icon></button> -->
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<body>
+  <div [@triggerName]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+</body>
+

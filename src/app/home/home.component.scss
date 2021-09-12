@@ -1,0 +1,249 @@
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
+/*#region cardscoloring*/
+
+.ghost-blue {
+    font-size: 40px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 2px #557DBF;
+    color: transparent;
+  }
+  
+  .ghost-red {
+    font-size: 40px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 2px #E1382B;
+    color: transparent;
+  }
+  
+  .ghost-green {
+    font-size: 40px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 2px #189E59;
+    color: transparent;
+  }
+/*#endregion cardscoloring*/
+
+/*#region MainBody*/
+.section-spacer {
+    padding: 70px 0;
+  }
+  /*#region Color Tags */
+  first-letter {
+    color: #557dbf;
+    font-weight: 400;
+  }
+  
+  second-letter {
+    color: #fbbc12;
+    font-weight: 400;
+  }
+  
+  third-letter {
+    color: #e1382b;
+    font-weight: 400;
+  }
+  
+  fourth-letter {
+    color: #189e59;
+    font-weight: 400;
+  }
+  /*#endregion Color Tags */
+  
+  /*#region HomeSection*/
+  section .home{
+    min-height: 100vh;
+    background-color: transparent;
+    text-align: center;
+  }
+  /* .child {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  } */
+  /* .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 550px;
+  } */
+  
+  
+  .hero{
+    min-height: 550px;
+    align-items: center;
+    -webkit-animation: fadeIn 2s; 
+    -moz-animation: fadeIn 2s; 
+     -ms-animation: fadeIn 2s; 
+      -o-animation: fadeIn 2s; 
+         animation: fadeIn 2s;
+  }
+  
+  #main_logo{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 340px;
+    width: auto;
+  }
+
+  #outer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*#region SVG*/
+  .text--line {
+      font-size: 0.5em;
+    }
+    .svg-container svg {
+      translate: translate(-1260.832 -169.763);
+      top: auto;  
+      font: 16em/1 Arial;
+      width: 100%;
+      height: 100%;
+      
+    }
+    
+    .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 7% 28%;
+      stroke-width: 3px;
+      -webkit-animation: stroke-offset 5s infinite linear;
+              animation: stroke-offset 5s infinite linear;
+    }
+    .text-copy:nth-child(4) {
+      stroke: #EFEAC5;
+      /* stroke-dashoffset: 28%; */
+      animation-delay: -4s;
+    }
+    .text-copy:nth-child(1) {
+      stroke: #3cba54;
+      /* stroke-dashoffset: 7%; */
+      animation-delay: -1s;
+    }
+    .text-copy:nth-child(3) {
+      stroke: #db3236;
+      /* stroke-dashoffset: 14%; */
+      animation-delay: -3s;
+    }
+    .text-copy:nth-child(2) {
+      stroke: #f4c20d;
+      /* stroke-dashoffset: 21%; */
+      animation-delay: -2s;
+    }
+    .text-copy:nth-child(5) {
+      stroke: #4885ed;
+      /* stroke-dashoffset: 35%; */
+      animation-delay: -5s;
+    }
+    @keyframes stroke-offset{
+      100% {stroke-dashoffset: -35%;}
+    }
+  
+  /*#endregion SVG*/
+  
+  /*#endregion HomeSection*/
+  
+  /*#region AimSecion*/
+  .feature-card {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 30px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card .feature-card__body,
+  .feature-card .u-icon {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  
+  .feature-card .u-icon {
+    margin-right: 20px;
+  }
+  /*#endregion AimSecion*/
+  
+  /*#region opportunities*/
+
+.section-title {
+  text-transform: capitalize;
+}
+
+.section-title-custom {
+  text-transform: none;
+}
+
+.section-subtitle {
+  font-size: 15px;
+}
+
+.assistive-text {
+  font-size: 12px;
+}
+  .section-header {
+    margin-bottom: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .section-screens__inner .section-header {
+    margin-bottom: 20px;
+  }
+  
+  .section-screens__inner .section-header .btn {
+    font-size: 14px;
+  }
+  
+  .section-screens__inner .section-header .u-icon__outline {
+    border-color: #2F5BE7;
+  }
+
+  .ui-container {
+    padding: 20px;
+  }
+  .card-body ul {
+    display: block;
+    margin: 0 0 0;
+    padding-left: 20px;
+    list-style-type: square;
+    font-size: 15px;
+  }
+  
+  #Aditya{
+    display:block;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  /*#endregion opportunities*/
+
+  /*#endregion MainBody*/
+  
+  /*#region Test*/
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+  /*#endregion Test*/
